@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Calculadora de operaciones b&acute;sicas</title>
+</head>
+
+<body>
+    <h1>Calculardora de operaciones b&aacute;sicas</h1>
+    <form name="datosCalculo" onsubmit="return false;">
+        <div>
+            <label>Primer operando:</label>
+            <input type="number" value="0" name="primerOperando" id="idPrimerOperando">
+        </div>
+        <br>
+        <div>
+            <label>Segundo operando:</label>
+            <input type="number" value="0" name="sengundoOperando" id="idSegundoOperando">
+            <br>
+            <span id="errorSegundoOperando"></span>
+            <br>
+        </div>
+        <div>
+            <button name="operadorSuma" id="idOperadorSuma" onclick="sumar()">Sumar</button>
+            <button name="operadorResta" id="idOperadorResta" onclick="restar()">Restar</button>
+            <button name="operadorMultiplicar" id="idOperadorMultiplica" onclick="multiplicar()">Multiplicar</button>
+            <button name="operadorDividir" id="idOperadorDividir" onclick="dividir()">Dividir</button>
+        </div>
+    </form>
+    <div>
+        <h1>Resultado:&nbsp;<span id="resultado"></span></h1>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
